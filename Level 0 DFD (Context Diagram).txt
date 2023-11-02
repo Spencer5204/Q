@@ -1,0 +1,72 @@
+Level 0 DFD (Context Diagram):
+
+Quiz Game System
+Description: Represents the entire quiz game system.
+External Entities:
+Players (Users)
+Description: The users who interact with the quiz game.
+Processes:
+Start Quiz
+Description: Initiates a quiz session.
+Submit Answers
+Description: Allows users to submit their answers.
+Quiz Database
+Description: The database containing quiz questions, answers, and scores.
+Processes:
+Retrieve Quiz Data
+Description: Retrieves questions and answers for the quiz.
+Update Scores
+Description: Updates user scores based on their responses.
+Quiz Leaderboard
+Description: Displays the leaderboard with user scores.
+Processes:
+Display Leaderboard
+Description: Shows user scores and rankings.
+Data Flows:
+Quiz Data
+Description: Questions and answers for the quiz.
+User Responses
+Description: User-provided answers to quiz questions.
+User Scores
+Description: Scores achieved by users in the quiz.
+Leaderboard Display
+Description: Displayed leaderboard data.
+Level 1 DFD:
+
+Start Quiz
+
+Description: Allows users to initiate a quiz session.
+Inputs:
+User Information
+Outputs:
+Quiz Data
+Timer Start
+Retrieve Quiz Data
+
+Description: Retrieves quiz questions and answers from the database.
+Inputs:
+QuizID
+Outputs:
+Quiz Data
+Submit Answers
+
+Description: Allows users to submit their answers.
+Inputs:
+User Responses
+Timer End
+Outputs:
+User Scores
+Update Scores
+
+Description: Updates user scores based on their responses.
+Inputs:
+User Responses
+Outputs:
+User Scores
+Display Leaderboard
+
+Description: Displays the leaderboard with user scores.
+Inputs:
+User Scores
+Outputs:
+Leaderboard Display
